@@ -1,0 +1,24 @@
+---creating the cluster
+eksctl create cluster  --region us-east-2 --node-type t3.small  --nodes 2  --nodes-min 1  --nodes-max 4 --name CaliforniaVoters-registration-cluster  --kubeconfig=C:/KubernatesCluster/kube-config.yaml
+
+---set environment variable
+set KUBECONFIG=C:/KubernatesCluster/kube-config.yaml
+
+----run deployment file
+kubectl apply -f C:/KubernatesCluster/deployment.yaml
+
+---get namespaces
+kubectl get namespaces
+
+---get running nodes
+kubectl get nodes
+
+---get services
+kubectl get svc
+
+---get deployments
+kubectl get deployments
+
+---describe deployments
+kubectl describe deployments
+

@@ -1,0 +1,30 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMvakNDQWVhZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1USXpNREV5TWpBME9Wb1hEVE15TVRJeU56RXlNakEwT1Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT0VQCjRYb2drVFVjNnkzdTVBOUh6b0VHZ0NMQ1VVTjc3L1dPTjAweFpWQ1I3M2ZpZGZWbXhRZXhPeHgwZGt1VEFPc2oKWmhXdTlBdXpwNWlKVDZVbTBFakk1V0JveWZKN0w5RSt3aG9XaldIZDN0Smc4cGJnZ1ErazdqZjIzVWdxQzdYNgpZbXNYVUE5Z0pkdG1Qam1mRUlETXhWU2R3OEV1RVVteWZqWEhtRlRpV2JUNUU5d1NCUEcvWXBhV21jTXI0YkJwCllzakJGUFFhUWdrNENmOE9WUHVsTE9EWDNwVm1pZVZZZHBZRDlhankyMFJMc3pxVGl1OFFHMmRqK050UVZSMVAKeC92Zzkyc25PbFpjekl3ZWd3WEFKSnVFMWQ5dTZXeEtCM0pzSzVMYXZLRXdmUjMwZERxNWYxYzE2eHJUWU91bgo4VWVodkxiQjNibTdCZ1c1eHZrQ0F3RUFBYU5aTUZjd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZFS0dweU14dkJXY2w3WTM3RFBxRFByMG81dW9NQlVHQTFVZEVRUU8KTUF5Q0NtdDFZbVZ5Ym1WMFpYTXdEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBQTV5YU0wckN3ek5IekRuWWkxcApsb2ZPVHRxODB6cWdmaXdQNDdKenA1NTVEMHlPdjVnbXBEbEdYejk4NXdOcG0rRzRNbTV1aGNTbEp4QW51VEE0CmVWbnRranpOVmNlMmoySTVWQWJpMEh6YmdtdDJuUndKb2kwVEp3aVBGN1ZIQzlqbkEyaTdIUFdrVXF3b1RXL1IKc2ZTdU1aZGs0M2lMRy9XTVJCdEdiaXEyNUxUekhQTWZNek14YVVnb1dGVjFQenFTUXoyZU5OUHBxbUdZQmh3SApZeTR2VWV3YkVoVHN5K2tHTnZnZ2tCK1BPL2N5bGRscXFkTzhpb2N4OC9YVHBtMVVaNk04L1JLUUlxakpJMjhLCmtIeDZUeWZqUk1DSGdkbThXM2xhRk0xL2FhcHQ3bEd1enBaNVZBL1J5NDdMY0dVeEl0YldKQjA5YU9tZHgwYmUKWUY0PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://6AAF5C0B21CB14C96365782680D9491C.gr7.us-east-2.eks.amazonaws.com
+  name: CaliforniaVoters-registration-cluster.us-east-2.eksctl.io
+contexts:
+- context:
+    cluster: CaliforniaVoters-registration-cluster.us-east-2.eksctl.io
+    user: jithmi-iit-20211480@CaliforniaVoters-registration-cluster.us-east-2.eksctl.io
+  name: jithmi-iit-20211480@CaliforniaVoters-registration-cluster.us-east-2.eksctl.io
+current-context: jithmi-iit-20211480@CaliforniaVoters-registration-cluster.us-east-2.eksctl.io
+kind: Config
+preferences: {}
+users:
+- name: jithmi-iit-20211480@CaliforniaVoters-registration-cluster.us-east-2.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - token
+      - -i
+      - CaliforniaVoters-registration-cluster
+      command: aws-iam-authenticator
+      env:
+      - name: AWS_STS_REGIONAL_ENDPOINTS
+        value: regional
+      - name: AWS_DEFAULT_REGION
+        value: us-east-2
+      provideClusterInfo: false

@@ -1,0 +1,10 @@
+localhost:8088/saveVoter
+localhost:8088/updateVoter
+
+localhost:8089/registerVoter
+localhost:8089/getRegisterDataById
+localhost:8089/updateVoterData
+localhost:8089/removeVoter
+
+
+localhost:8090/accessSatellite/
